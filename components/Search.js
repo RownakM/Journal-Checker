@@ -8,7 +8,7 @@ const Search = () => {
     async function handleOnClick(e) {
         e.preventDefault()
         const inp = document.getElementById('input_id').value
-        const fetchUrl = 'http://localhost:8000/search/' + inp.toString() + '/'
+        const fetchUrl = 'https://api.journalchecker.com/search/' + inp.toString() + '/'
         const res = fetch(fetchUrl, {
             method: "GET",
             headers: {

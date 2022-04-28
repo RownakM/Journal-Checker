@@ -40,7 +40,7 @@ const Results = () => {
             <div className={styles.container}>
                 <div className={styles.search}>
                     <Search />
-                    <p>{number} results for <b>"{searchTerm}"</b></p>
+                    <p>{number} results for <b>&quot;{searchTerm}&quot;</b></p>
                 </div>
             </div>
             <div className={styles.iter} >

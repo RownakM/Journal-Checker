@@ -94,6 +94,23 @@ const Detail = () => {
             )
         }
     }
+
+    const impact = (obj) => {
+        if (obj.impact_factor) {
+            return (
+                <div className={styles.impact}>
+                    <h4>Impact Factor</h4>
+                    <span>{obj.impact_factor}</span>
+                </div>
+            )
+        } else return (
+            <div className={styles.impact}>
+                <h4>Impact Factor</h4>
+                <span>N/A</span>
+            </div>
+        )
+        
+    }
     
     return (
         <>
@@ -134,10 +151,7 @@ const Detail = () => {
                             
                         </div>
                     </div>
-                    <div className={styles.impact}>
-                        <h4>Impact Factor</h4>
-                        <span>24.324</span>
-                    </div>
+                    {impact(obj)}
                 </div>
                 <div className={styles.detailedContainer}>
                     {pmc(obj)}

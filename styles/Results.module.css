@@ -90,3 +90,14 @@
     align-items: center;
     cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+    .disclaimerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        width: 85%;
+    }
+}

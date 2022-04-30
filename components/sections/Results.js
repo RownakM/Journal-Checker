@@ -15,7 +15,7 @@ const Results = () => {
         if (number == 0) {
             return (
             <>
-                <p>Sorry, we couldn't find <b>&quot;{searchTerm}&quot;</b> in any of the database(s).</p>
+                <p>Sorry, we couldn&apos;t find <b>&quot;{searchTerm}&quot;</b> in any of the database(s).</p>
             </>
             )
         } else return (

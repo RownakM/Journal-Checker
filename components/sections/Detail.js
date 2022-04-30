@@ -51,7 +51,7 @@ const Detail = () => {
                 <h4>DOAJ Information</h4>
                 <div className={styles.flexContainer}>
                     <div className={styles.singleInfo}>
-                        <p>APC</p>
+                        <p>Article Processing Charge</p>
                         <p>{apc}</p>   
                     </div>
                     <div className={styles.vertical}></div>

@@ -10,6 +10,19 @@ const Results = () => {
     const result = JSON.parse(localStorage.getItem("result"))
     const searchTerm = localStorage.getItem("searchTerm")
     const number = result.length
+
+    const zero = (number, searchTerm) => {
+        if (number == 0) {
+            return (
+            <>
+                <p>Sorry, we couldn't find <b>&quot;{searchTerm}&quot;</b> in any of the database(s).</p>
+            </>
+            )
+        } else return (
+            <p>{number} results for <b>&quot;{searchTerm}&quot;</b></p>
+        )
+    }
+
     const issnFunc = (obj) => {
         if (obj.issn != 'N/A') {
             return obj.issn
@@ -40,7 +53,7 @@ const Results = () => {
             <div className={styles.container}>
                 <div className={styles.search}>
                     <Search />
-                    <p>{number} results for <b>&quot;{searchTerm}&quot;</b></p>
+                    {zero(number, searchTerm)}
                 </div>
             </div>
             <div className={styles.iter} >

@@ -15,10 +15,10 @@ const Hero = () => {
                     </div>
                     <div className={styles.desc}>
                         <span>
-                        This search engine searches through relevant database 
+                        This search engine searches through relevant database(s)
                         and checks whether the journal is accepted for promotion, 
                         according to the latest NMC guidelines.
-                            <hr />
+                            
                         </span>
                     </div>
                     <div className={styles.footer}>
@@ -29,8 +29,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className={styles.update}>
-                    <span>Last Updated On: 12/04/2022</span>
-                    <span>23:23 hr</span>
+                    <span>Last Updated On: 30/04/2022</span>
                 </div>
             </section>
         </>

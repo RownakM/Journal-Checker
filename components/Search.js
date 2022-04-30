@@ -26,11 +26,18 @@ const Search = () => {
             console.log(err)
         })
     }
+
+    const handleEnter = (e) => {
+        if (e.which == 13 || e.keyCode == 13) {
+            handleOnClick(e)
+        }
+    }
+
     return (
         <>
         <div className={styles.container}>
-            <input type="text" placeholder="Search for journals" id="input_id" autoComplete="off" />
-            <a onClick={handleOnClick}><Image className={styles.image} src="/images/search.png" height={15} width={15} /></a>
+            <input onKeyDown={handleEnter} type="text" placeholder="Search for journals (name / ISSN)" id="input_id" autoComplete="off" />
+            <a onClick={handleOnClick}><Image className={styles.image} src="/images/search.png" height={16} width={16} /></a>
         </div>
         </>
     );

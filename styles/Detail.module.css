@@ -199,6 +199,7 @@
     .flexContainer {
         display: flex;
         flex-direction: column;
+        
     }
 
     .horizontal {
@@ -211,7 +212,19 @@
     }
 
     .journal {
-        height: 400px;
+        height: 450px;
         margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .index, .impact {
+        height: 325px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .index, .impact {
+        height: 500px;
     }
 }

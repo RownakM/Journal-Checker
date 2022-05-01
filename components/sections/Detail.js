@@ -29,11 +29,13 @@ const Detail = () => {
                         <p>{obj.earliest_volume}</p>   
                     </div>
                     <div className={styles.vertical}></div>
+                    <div className={styles.horizontal}><hr /></div>
                     <div className={styles.singleInfo}>
                         <p>Lastest Issue</p>
                         <p>{obj.latest_issue}</p>   
                     </div>
                     <div className={styles.vertical}></div>
+                    <div className={styles.horizontal}><hr /></div>
                     <div className={styles.singleInfo}>
                         <p>Participation</p>
                         <p>{obj.latest_issue}</p>   
@@ -55,11 +57,13 @@ const Detail = () => {
                         <p>{apc}</p>   
                     </div>
                     <div className={styles.vertical}></div>
+                    <div className={styles.horizontal}><hr /></div>
                     <div className={styles.singleInfo}>
                         <p>APC Amount</p>
                         <p>{obj.apc_amount}</p>   
                     </div>
                     <div className={styles.vertical}></div>
+                    <div className={styles.horizontal}><hr /></div>
                     <div className={styles.singleInfo}>
                         <p>Added On</p>
                         <p>{obj.added_on}</p>   
@@ -80,6 +84,7 @@ const Detail = () => {
                         <p>{obj.active}</p>   
                     </div>
                     <div className={styles.vertical}></div>
+                    <div className={styles.horizontal}><hr /></div>
                     <div className={styles.singleInfo}>
                         <p>Coverage Years</p>
                         <p>{obj.coverage_years}</p>   

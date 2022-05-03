@@ -5,18 +5,15 @@ import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
   return <>
-    <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-YC9DVSEFQT`} id="g-tag-1" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC9DVSEFQT" id='g-tag-1'></script>
+    <script id='g-tag-2'>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
 
-    <Script strategy="lazyOnload" id='g-tag-2'>
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YC9DVSEFQT', {
-            page_path: window.location.pathname,
-            });
-        `}
-    </Script>
+      gtag('config', 'G-YC9DVSEFQT');
+    </script>
     <Head>
         <title>Journal Indexing Checker</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

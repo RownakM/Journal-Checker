@@ -6,14 +6,19 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
   return <>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC9DVSEFQT" id='g-tag-1'></script>
-    <script id='g-tag-2'>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
+    <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-YC9DVSEFQT"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'G-YC9DVSEFQT');
-    </script>
+          gtag('config', 'G-YC9DVSEFQT');
+        `}
+      </Script>
     <Head>
         <title>Journal Indexing Checker</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

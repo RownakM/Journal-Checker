@@ -21,12 +21,14 @@ const Hero = () => {
                          Doaj and Medline).
                         </span>
                     </div>
+
                     <div className={styles.footer}>
                         <div className={styles.footerContainer}>
                             <span>Supported by</span>
                             <Image src="/images/logo.png" width={75} height={75}/>
                         </div>
                     </div>
+                    
                 </div>
                 <div className={styles.update}>
                     <span>Last Updated On: 23/05/2022</span>

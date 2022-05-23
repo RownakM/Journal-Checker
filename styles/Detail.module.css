@@ -158,6 +158,20 @@
 }
 
 
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.footerContainer span {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
 .singleInfo p {
     text-align: center;
 }

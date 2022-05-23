@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useRouter } from "next/router";
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 const Results = () => {
     const router = useRouter()
@@ -60,6 +61,10 @@ const Results = () => {
                 <ol>
                     {updateObjs}
                 </ol>
+            </div>
+            <div className={styles.footerContainer}>
+                <span>Supported by</span>
+                <Image src="/images/darkLogo.png" width={75} height={75}/>
             </div>
             <div className={styles.disclaimer} >
                 <div className={styles.disclaimerDiv}>

@@ -34,11 +34,16 @@ const Search = () => {
     }
 
     return (
-        <>
-        <div className={styles.container}>
-            <input onKeyDown={handleEnter} type="text" placeholder="Search for journals (name / ISSN)" id="input_id" autoComplete="off" />
-            <a onClick={handleOnClick}><Image className={styles.image} src="/images/search.png" height={16} width={16} /></a>
-        </div>
+        <> 
+            {/* <div className={styles.flexContainer}>
+            <div>
+                <Image src="/images/shortLogo.png" height={10} width={10} />
+            </div> */}
+            <div className={styles.container}>
+                <input onKeyDown={handleEnter} type="text" placeholder="Search for journals (name / ISSN)" id="input_id" autoComplete="off" />
+                <a onClick={handleOnClick}><Image className={styles.image} src="/images/search.png" height={16} width={16} /></a>
+            </div>
+            {/* </div> */}
         </>
     );
 }

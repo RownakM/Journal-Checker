@@ -183,6 +183,10 @@ const Detail = () => {
                     </div> */}
                 </div>
             </div>
+            <div className={styles.footerContainer}>
+                <span>Supported by</span>
+                <Image src="/images/darkLogo.png" width={75} height={75}/>
+            </div>
             <div className={styles.disclaimer} >
                 <div className={styles.disclaimerDiv}>
                     <span><b>Disclaimer: </b></span>
@@ -196,6 +200,7 @@ const Detail = () => {
                     </p>
                 </div>
             </div>
+            
         </section>
         </>
     );

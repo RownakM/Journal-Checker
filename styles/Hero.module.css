@@ -25,7 +25,7 @@
 
 .desc span {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
 }
 
 .desc hr {
@@ -104,6 +104,7 @@
     .update span {
         color: black;
     }
+
 
 
 }

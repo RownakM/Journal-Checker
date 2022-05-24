@@ -100,18 +100,49 @@ const Detail = () => {
         }
     }
 
+    const h_index = (obj) => {
+        if (obj.h_index) {
+            return (
+                <div className={styles.h_index}>
+                    <h4>H-Index</h4>
+                    <span>{obj.h_index}</span>
+                </div>
+            )
+        }
+    }
+
+    const sjr = (obj) => {
+        if (obj.sjr) {
+            return (
+                <div className={styles.sjr}>
+                    <h4>SJR Quartiles</h4>
+                    <span>{obj.sjr}</span>
+                </div>
+            )
+        }
+    }
+
     const impact = (obj) => {
         if (obj.impact_factor) {
             return (
                 <div className={styles.impact}>
                     <h4>Impact Factor</h4>
                     <span>{obj.impact_factor}</span>
+                    <div className={styles.combined}>
+                        {h_index(obj)}
+                        <div className={styles.sjrVerti}></div>
+                        {sjr(obj)}
+                    </div>
                 </div>
             )
         } else return (
             <div className={styles.impact}>
                 <h4>Impact Factor</h4>
                 <span>N/A</span>
+                <div className={styles.combined}>
+                        {h_index(obj)}
+                        {sjr(obj)}
+                    </div>
             </div>
         )
         

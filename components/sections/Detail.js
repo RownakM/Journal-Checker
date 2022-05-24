@@ -108,7 +108,12 @@ const Detail = () => {
                     <span>{obj.h_index}</span>
                 </div>
             )
-        }
+        } else return (
+            <div className={styles.h_index}>
+                    <h4>H-Index</h4>
+                    <span>N/A</span>
+                </div>
+        )
     }
 
     const sjr = (obj) => {
@@ -119,7 +124,12 @@ const Detail = () => {
                     <span>{obj.sjr}</span>
                 </div>
             )
-        }
+        } else return (
+            <div className={styles.sjr}>
+                    <h4>SJR Quartiles</h4>
+                    <span>N/A</span>
+                </div>
+        )
     }
 
     const impact = (obj) => {

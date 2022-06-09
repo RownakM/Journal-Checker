@@ -17,8 +17,8 @@ const Hero = () => {
                         <span>
                         This search engine searches through relevant database(s) 
                         and checks whether the journal is indexed according to the 
-                        latest NMC guidelines <br></br>(Web of Science, Pubmed, Scopus, Embase,
-                         DOAJ and Medline).
+                        latest NMC guidelines <br></br>SCIE (Web of Science), Pubmed Central, Scopus, Embase,
+                         DOAJ and Medline.
                         </span>
                     </div>
 

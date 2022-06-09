@@ -89,11 +89,6 @@ const Detail = () => {
                         <p>Coverage Years</p>
                         <p>{obj.coverage_years}</p>   
                     </div>
-                    {/* <div className={styles.vertical}></div>
-                    <div className={styles.singleInfo}>
-                        <p>Discontinued by Scopus?</p>
-                        <p>{obj.added_on}</p>   
-                    </div> */}
                 </div>
             </div>
             )
@@ -203,25 +198,6 @@ const Detail = () => {
                     {pmc(obj)}
                     {doaj(obj)}
                     {scopus(obj)}
-                    {/* <div className={styles.journal}>
-                        <h4>DOAJ Information</h4>
-                        <div className={styles.flexContainer}>
-                            <div className={styles.singleInfo}>
-                                <p>Article Processing Charges</p>
-                                <p>HI BHAU YE SAB KYA</p>   
-                            </div>
-                            <div className={styles.vertical}></div>
-                            <div className={styles.singleInfo}>
-                                <p>Rate</p>
-                                <p>HI BHAU YE SAB KYA</p>   
-                            </div>
-                            <div className={styles.vertical}></div>
-                            <div className={styles.singleInfo}>
-                                <p>Time Taken</p>
-                                <p>HI BHAU YE SAB KYA</p>   
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
 

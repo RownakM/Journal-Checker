@@ -128,11 +128,11 @@ const Detail = () => {
     }
 
     const impact = (obj) => {
-        if (obj.impact_factor) {
+        if (obj.impact_factor_latest) {
             return (
                 <div className={styles.impact}>
                     <h4>Impact Factor 2022 (IF 2021) </h4>
-                    <span className={styles.mainIF}>{obj.impact_factor_latest} <span className={styles.latestIFSpan}>({obj.impact_factor})</span></span>
+                    <span className={styles.mainIF}>{obj.impact_factor_latest} <span className={styles.latestIFSpan}>({obj.impact_factor || "N/A"})</span></span>
                     <div className={styles.combined}>
                         {h_index(obj)}
                         <div className={styles.sjrVerti}></div>
@@ -143,7 +143,7 @@ const Detail = () => {
         } else return (
             <div className={styles.impact}>
                 <h4>Impact Factor</h4>
-                <span>N/A</span>
+                <span>N/A <span className={styles.latestIFSpan}>({obj.impact_factor || 'N/A'})</span></span>
                 <div className={styles.combined}>
                         {h_index(obj)}
                         {sjr(obj)}

@@ -208,6 +208,14 @@
     margin-top: 10%;
 }
 
+.latestIFSpan {
+    font-size: 0.875rem !important;
+}
+
+.mainIF {
+    text-align: center;
+}
+
 @media screen and (max-width: 450px) {
     .searchContainer {
         width: 85%;

@@ -80,7 +80,7 @@ const Detail = () => {
         }
     };
     const scopus = (obj) => {
-        if (obj.in_scopus) {
+        if (obj.in_scopus && obj.active != "Inactive") {
             return (
                 <div className={styles.journal}>
                     <h4>Scopus Information</h4>

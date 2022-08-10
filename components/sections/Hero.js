@@ -1,6 +1,7 @@
 import styles from '../../styles/Hero.module.css'
 import Image from 'next/image';
 import Search from '../Search';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -25,7 +26,7 @@ const Hero = () => {
                     <div className={styles.footer}>
                         <div className={styles.footerContainer}>
                             <span>Supported by</span>
-                            <Image src="/images/logo.png" width={75} height={75}/>
+                            <a href="https://www.qtanea.com"><Image src="/images/logo.png" width={75} height={75}/></a>
                         </div>
                     </div>
                     

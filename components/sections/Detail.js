@@ -14,15 +14,16 @@ const Detail = () => {
         } else return 'N/A';
     };
     const tickCross = (obj, name) => {
+        if (eval(`obj.in_${name}`)) return tick;
+        else return cross;
+    };
+
+    const tickCrossScopus = (obj) => {
         if (obj.in_scopus) {
             if (obj.active != "Inactive") return tick;
-            else return cross;
-        } else {
-            if (eval(`obj.in_${name}`)) return tick;
-            else return cross;
-        }
-
-    };
+            else return cross; 
+        } else return cross
+    }
 
     const pmc = (obj) => {
         if (obj.in_pmc) {
@@ -193,7 +194,7 @@ const Detail = () => {
                                 </div>
 
                                 <div className={styles.checkbox}>
-                                    <p>Scopus</p><div>{tickCross(obj, 'scopus')}</div>
+                                    <p>Scopus</p><div>{tickCrossScopus(obj)}</div>
                                 </div>
 
                             </div>
@@ -209,7 +210,7 @@ const Detail = () => {
 
                 <div className={styles.footerContainer}>
                     <span>Supported by</span>
-                    <Image src="/images/darkLogo.png" width={75} height={75} />
+                    <a href="https://www.qtanea.com"><Image src="/images/darkLogo.png" width={75} height={75} /></a>
                 </div>
 
                 <div className={styles.disclaimer} >

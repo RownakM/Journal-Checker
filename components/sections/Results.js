@@ -65,7 +65,7 @@ const Results = () => {
 
             <div className={styles.footerContainer}>
                 <span>Supported by</span>
-                <Image src="/images/darkLogo.png" width={75} height={75}/>
+                <a href="https://www.qtanea.com"><Image src="/images/darkLogo.png" width={75} height={75}/></a>
             </div>
             
             <div className={styles.disclaimer} >
